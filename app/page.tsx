@@ -10,14 +10,14 @@ export default function WelcomePage() {
         #bg-video { position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%; object-fit: cover; z-index: -2; }
         .overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4); z-index: -1; }
         
-        .welcome-screen { text-align: center; z-index: 1; display: flex; flex-direction: column; align-items: center; padding: 0 20px; }
-        .title-container { margin-bottom: 35px; text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); line-height: 1.1; }
+        .welcome-screen { text-align: center; z-index: 1; display: flex; flex-direction: column; align-items: center; width: 100%; padding: 0 15px; }
+        .title-container { margin-bottom: 30px; text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); line-height: 1.1; width: 100%; }
         
-        /* Menggunakan ukuran fleksibel (clamp) agar pas di HP maupun Laptop */
-        .title-top { font-size: clamp(2.5rem, 10vw, 4.5rem); color: #F4D03F; display: flex; align-items: baseline; justify-content: center; gap: 12px; flex-wrap: wrap; }
-        .font-alex { font-family: 'Alex Brush', cursive; font-size: clamp(3rem, 12vw, 5rem); }
-        .font-amatic { font-family: 'Amatic SC', cursive; font-weight: 700; font-size: clamp(3.5rem, 14vw, 6rem); letter-spacing: 2px; }
-        .title-bottom { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: clamp(2rem, 8vw, 3.5rem); font-weight: 700; color: #F4D03F; letter-spacing: 4px; text-transform: lowercase; margin-top: -5px; }
+        /* Menyesuaikan rentang clamp agar lebih aman di layar HP kecil */
+        .title-top { font-size: clamp(2rem, 8vw, 4.5rem); color: #F4D03F; display: flex; align-items: baseline; justify-content: center; gap: 10px; flex-wrap: wrap; }
+        .font-alex { font-family: 'Alex Brush', cursive; font-size: clamp(2.5rem, 10vw, 5rem); }
+        .font-amatic { font-family: 'Amatic SC', cursive; font-weight: 700; font-size: clamp(3rem, 11vw, 6rem); letter-spacing: 2px; }
+        .title-bottom { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: clamp(1.8rem, 7vw, 3.5rem); font-weight: 700; color: #F4D03F; letter-spacing: 3px; text-transform: lowercase; margin-top: -5px; }
         
         .btn-lanjutkan {
             display: inline-block;
