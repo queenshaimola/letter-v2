@@ -41,7 +41,6 @@ So please, take all the time you need. You're doing so much better than you give
       });
     }
 
-    // Fungsi efek mengetik surat
     function typeWriter() {
       if (textContainer && index < textMessage.length) {
         textContainer.innerHTML += textMessage.charAt(index);
@@ -109,7 +108,7 @@ So please, take all the time you need. You're doing so much better than you give
             justify-content: center;
             align-items: center;
             font-family: 'Poppins', sans-serif;
-            padding: 20px;
+            padding: 15px;
             position: relative;
             overflow-x: hidden;
             background-color: #0c0c0c;
@@ -145,7 +144,7 @@ So please, take all the time you need. You're doing so much better than you give
         }
 
         .welcome-title {
-            font-size: 1.8rem;
+            font-size: clamp(1.2rem, 5vw, 1.8rem);
             font-weight: 500;
             margin-bottom: 12px;
         }
@@ -170,16 +169,17 @@ So please, take all the time you need. You're doing so much better than you give
             transform: translateY(-2px);
         }
 
+        /* Kotak Surat Compact untuk HP */
         .paper-letter {
             background-color: rgba(255, 253, 249, 0.94);
             background-image: linear-gradient(#e1dcd6 1px, transparent 1px);
-            background-size: 100% 2.1rem;
-            padding: 30px 45px;
-            border-radius: 14px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-            max-width: 820px;
-            width: 95%;
-            max-height: 72vh;
+            background-size: 100% 1.8rem;
+            padding: 20px 25px;
+            border-radius: 12px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+            max-width: 750px;
+            width: 100%;
+            max-height: 75vh;
             overflow-y: auto;
             position: relative;
             transform: rotate(-0.5deg);
@@ -188,7 +188,7 @@ So please, take all the time you need. You're doing so much better than you give
         }
 
         .paper-letter::-webkit-scrollbar {
-            width: 5px;
+            width: 4px;
         }
         .paper-letter::-webkit-scrollbar-thumb {
             background: #d81b60;
@@ -197,9 +197,9 @@ So please, take all the time you need. You're doing so much better than you give
 
         .letter-content {
             font-family: 'Caveat', cursive;
-            font-size: 1.55rem;
+            font-size: clamp(1.25rem, 4.5vw, 1.55rem);
             color: #2c2c2c;
-            line-height: 2.1rem;
+            line-height: 1.8rem;
             white-space: pre-wrap;
         }
 
@@ -216,8 +216,8 @@ So please, take all the time you need. You're doing so much better than you give
 
         .next-btn-wrapper {
             text-align: center;
-            margin-top: 25px;
-            padding-bottom: 10px;
+            margin-top: 20px;
+            padding-bottom: 5px;
             display: none;
             animation: fadeIn 0.8s ease forwards;
         }
@@ -226,8 +226,8 @@ So please, take all the time you need. You're doing so much better than you give
             background: #d81b60;
             color: white;
             border: none;
-            padding: 8px 24px;
-            font-size: 0.95rem;
+            padding: 7px 22px;
+            font-size: 0.9rem;
             font-family: 'Poppins', sans-serif;
             font-weight: 500;
             border-radius: 25px;
@@ -245,15 +245,16 @@ So please, take all the time you need. You're doing so much better than you give
             display: none;
             text-align: center;
             z-index: 10;
-            max-width: 800px;
+            max-width: 750px;
             width: 90%;
             position: absolute;
+            padding: 0 15px;
         }
 
         .quote-text {
             font-family: 'Caveat', cursive;
-            font-size: 3rem;
-            line-height: 3.5rem;
+            font-size: clamp(2rem, 7vw, 3rem);
+            line-height: 1.3;
             color: #ffeb3b; 
             text-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
             opacity: 0;
@@ -274,7 +275,7 @@ So please, take all the time you need. You're doing so much better than you give
         .final-heart {
             display: none;
             margin-top: 20px;
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             color: #ffeb3b;
             animation: fadeIn 1.5s ease forwards;
         }
