@@ -5,17 +5,12 @@ export default function LetterPage() {
         
 Hearing you say all of that means more to me than I could ever put into words. I want you to know that you never, ever have to apologize for taking time for yourself, for being quiet, or for not knowing what to say. You don't have to carry the weight of the world on your shoulders, and you certainly don't have to carry it alone. 
 
-we’re trying to get better life in here, to figured out. It’s built on absolute honesty, safe silence, and an unspoken promise that no matter how bad or messy things get, i hope we can always stay like this. You never have to hide the other parts of yourself when you  with me cause you are whole and worthy just as you are.
-
-I am so deeply, overwhelmingly grateful for your presence in my life, and I am endlessly proud of you. I see how gracefully you handle things even when you feel like you're falling apart, and how deeply you care despite everything you carry. Thank you for trusting me with your heart, for letting me be a small spot of light in your world, and for simply being you. You matter so much to me, and as long as I'm around, i’m sure you will never have to face the shit alone. 
- 
 So please, take all the time you need. You're doing so much better than you give yourself credit for, I'll be right here listening whenever you need to vent, or just sitting with you in silence when words are too much. Take good care of yourself, because you deserve all the good things this world has to offer <3`;
 
   const quotes = [
     "I hope you remember you matter...",
     "Because you are my anchor when the tide gets too rough.",
     "Because you are my lighthouse when the night swallows the sea",
-    "You are precious, and a beautiful eldest daughter...",
     "I'm always proud of whatever you've done in this world.",
     "i hope you find the love you truly deserved."
   ];
